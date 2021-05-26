@@ -1,0 +1,100 @@
+#!/bin/bash
+# Copyrighted © By Jamess From Indonesian 25-05-2021
+# Don't Delete This And Don't Recode !!
+
+clear
+
+r='\e[1;31m'
+g='\e[1;32m'
+b='\e[1;34m'
+w='\e[1;97m'
+
+###################################################
+# CTRL C
+###################################################
+trap ctrl_c INT
+ctrl_c() {
+clear
+echo -e $g"[#]> (Ctrl + C ) Detected, Trying To Exit ... "
+sleep 1
+echo ""
+echo -e $g"[#]> Thanks To Using My Tools."
+sleep 1
+read enter
+exit
+}
+
+
+echo -e $r"  _____ "                                               
+echo -e $r" /\___ \"                                               
+echo -e $r" \/__/\ \     __      ___ ___      __    ____    ____"
+echo -e $r"    _\ \ \  /'__`\  /' __` __`\  /'__`\ /',__\  /',__\" 
+echo -e $w"   /\ \_\ \/\ \L\.\_/\ \/\ \/\ \/\  __//\__, `\/\__, `\"
+echo -e $w"   \ \____/\ \__/.\_\ \_\ \_\ \_\ \____\/\____/\/\____/"
+echo -e $w"    \/___/  \/__/\/_/\/_/\/_/\/_/\/____/\/___/  \/___/"                                                    
+echo -e $g" _______________________________________________________"
+echo -e ""
+echo -e $g"    Author : $r Jamess $g (Indonesian)"
+echo -e $g"      From Team : $r DevillWorm 777"
+echo -e $g"    Using Code : $r Python, Shell & Bash."
+echo -e $g"   Contact Me : $b #DevillWorm (In Irssi)"
+echo -e $r"     You Wanna Join My Team? Contact Me" 
+echo -e $g" _______________________________________________________"
+echo -e ""
+echo -e ""
+echo -e $g" [1] Ip Lookup            [4] Email Tracker"
+echo -e $g" [2] Email Lookup.        [5] Instagram Lookup"
+echo -e $g" [3] Twitter Lookup       [0] Exit"
+echo -e $g""
+read -p " Choose Your Choise :" nzl;
+
+
+if [ $nzl = 01 ] || [ $nzl = 1 ]
+then
+clear
+sleep 1
+cd 777
+python3 if.py
+fi
+
+if [ $nzl = 02 ] || [ $nzl = 2 ]
+then
+clear
+sleep 1
+cd 777
+python3 se.py
+fi
+
+if [ $nzl = 03 ] || [ $nzl = 3 ]
+then
+clear
+sleep 1
+cd 777
+python3 st.py
+fi
+
+if [ $nzl = 04 ] || [ $nzl = 4 ]
+then
+clear
+sleep 1
+cd 777
+python3 mi.py
+fi
+
+if [ $nzl = 04 ] || [ $nzl = 4 ]
+then
+clear
+sleep 1
+cd 777
+python3 mi.py
+fi
+
+if [ $nzl = 00 ] || [ $nzl = 0 ]
+then
+clear
+echo -e $g"Thanks For Using Jamess Tools"
+sleep 1
+echo -e $g"Exit...."
+sleep 1
+exit
+fi
